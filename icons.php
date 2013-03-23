@@ -1,6 +1,6 @@
 <?php
 
-  /*
+	/*
 	 * Advanced Custom Fields - External Icons Selector Field add-on
 	 *
 	 *
@@ -232,6 +232,8 @@ if( class_exists('acf_Field') && !class_exists('Icons_field') ){
 								'<strong>Something\'s going on with your ACF\'s '.$field['label'].' Field!:</strong><br/>'.
 								'The <em>icons path</em> you specified in options is not pointing to any existing folder.'.
 							'</p></div>';
+
+				return;
 			}
 
 
@@ -243,6 +245,8 @@ if( class_exists('acf_Field') && !class_exists('Icons_field') ){
 								'<strong>Something\'s going on with your ACF\'s '.$field['label'].' Field!:</strong><br/>'.
 								'No <em>file types</em> were selected in your options.'.
 							'</p></div>';
+
+				return;
 			}
 
 
@@ -263,6 +267,8 @@ if( class_exists('acf_Field') && !class_exists('Icons_field') ){
 											'<strong>Oops! I couldn\'t find any images of given type in the path you specified in the options.</strong><br/'.
 											'Make sure you selected right <em>File Types</em> and the files are actually in that location.'.
 										'</p></div>';
+
+							return;
 						}
 
 
