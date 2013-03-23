@@ -22,3 +22,15 @@ if( function_exists( 'register_field' ) ){
 	register_field('Icons_field', dirname(__File__) . '/[path_to_the_file]/icons.php');
 }
 ```
+
+If only one `Output Type` was chosen, the class will return a string. Otherwise expect an array per icon, e,g.:
+
+```php
+Array(
+	'full_path' => '/path_to_file/filename.svg',
+	'full_filename' => 'filename.svg',
+	'css_class' => 'filename'
+)
+```
+
+
