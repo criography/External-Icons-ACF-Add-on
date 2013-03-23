@@ -14,15 +14,18 @@ But then again, I'm not really a backend dev anyway(;
 
 Usage
 -----
-
-Place the file somewhere in your theme and initiate the field with the snippet below in your `functions.php`:
++ Upload your icons to a location of choice.
++ Place the file somewhere in your theme and initiate the field with the snippet below in your `functions.php`:
 
 ```php
 if( function_exists( 'register_field' ) ){
 	register_field('Icons_field', dirname(__File__) . '/[path_to_the_file]/icons.php');
 }
 ```
++ While composing your *Custom Fields* you should be now able to see __Icons__ as field type. Selected it and fill __Icons Path__, __Filetypes__, __Allow Multiple Choices?__ and __Output Value__ options, accordingly to your requirements.
 
+
+###Output###
 If only one `Output Type` was chosen, the class will return a string. Otherwise expect an array per icon, e,g.:
 
 ```php
